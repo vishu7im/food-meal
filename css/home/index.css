@@ -1,0 +1,360 @@
+/*  css reset  */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Abril Fatface", cursi;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*  navbaar css  */
+
+.navbar {
+  display: flex;
+  /* border: 1px solid black; */
+  background-color: rgba(0, 0, 0, 0.296);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  box-shadow: 15px 1px 15px 7px rgba(0, 0, 0, 0.631);
+}
+
+.navbar img {
+  width: 75px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar p {
+  display: inline;
+  padding: 1px 1px;
+  color: aliceblue;
+  text-shadow: 9px 7px 6px black;
+  margin: 0.5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.navbar ul {
+  display: flex;
+  /* border: 1px red solid; */
+  justify-content: space-around;
+  align-items: center;
+  width: 30em;
+}
+
+.navbar ul li a {
+  color: aliceblue;
+  margin: 0.5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  /* font-size: 1.2em; */
+  transition: all 0.5s;
+}
+.active {
+  font-size: 1.5em;
+  padding: 2px 13px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 242, 0.631);
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.529);
+  padding: 2px 13px;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+/*  header css  */
+
+header {
+  height: 23em;
+}
+
+header::before {
+  content: "";
+  background-image: url("../../img/bg1.jpg");
+  position: absolute;
+  height: 25em;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+header p {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 3em;
+  text-transform: capitalize;
+  margin: 40px 47px;
+  color: white;
+  text-shadow: 9px 7px 6px black;
+  padding: 12px 17px;
+}
+
+header p span {
+  color: rgb(0, 255, 255);
+  margin: 0.5em;
+  font-weight: bolder;
+}
+
+.d-btn {
+  margin: 1px 68px;
+}
+.btn {
+  margin: 0em 1.1em;
+  height: 2em;
+  width: 11em;
+  border: none;
+  box-shadow: 15px 1px 15px 7px rgba(0, 0, 0, 0.631);
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-size: 1em;
+  transition: all 0.5s;
+}
+
+.o-btn {
+  background-color: aqua;
+  border: 2px white solid;
+}
+.o-btn:hover {
+  background-color: rgba(224, 254, 255, 0.576);
+  height: 2.2em;
+  width: 11.2em;
+  font-size: 1.2em;
+}
+.f-btn {
+  background-color: rgb(224, 254, 255);
+  border: 2px aqua solid;
+}
+.f-btn:hover {
+  background-color: rgba(0, 255, 255, 0.705);
+  height: 2.2em;
+  width: 11.2em;
+  font-size: 1.2em;
+}
+
+/* main */
+
+/* utlity  */
+.flex {
+  /* border: 2px rgb(217, 255, 0) solid ; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1px;
+  margin: 2em 0em;
+  height: 20em;
+  flex-wrap: wrap;
+}
+
+.p-heading {
+  /* border: 2px red solid ; */
+
+  color: rgb(241, 233, 233);
+  text-transform: capitalize;
+  /* margin: 0.3em; */
+  font-weight: bolder;
+  font-size: 4em;
+  text-align: center;
+  margin: 0.5em 0.5em;
+  text-shadow: 7px 5px 10px rgb(75, 72, 72);
+}
+
+.s-heading {
+  /* border: 2px rgb(0, 0, 0) solid ; */
+
+  color: rgb(0, 255, 255);
+  text-transform: capitalize;
+  margin: 0.3em;
+  font-weight: bolder;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 7px 5px 10px rgb(75, 72, 72);
+ 
+}
+.img {
+  /* border: 2px rgb(21, 255, 0) solid ; */
+  height: 18em;
+  margin: 0px auto;
+}
+
+.center {
+  border: 2px rgba(120, 239, 255, 0.658) solid;
+  background-color: rgba(66, 63, 63, 0.356);
+  width: 18em;
+  height: 22.5em;
+  border-radius: 12px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  box-shadow: 9px 6px 27px 8px rgb(0 0 0 / 63%);
+}
+
+.center:hover {
+  width: 19em;
+  height: 23.5em;
+  background-color: rgba(0, 255, 255, 0.151);
+}
+/* section1 our product  */
+#product {
+  height: 30em;
+  background-color: rgba(90, 89, 89, 0.15);
+  /* border: 2px solid black ; */
+}
+
+#product::before {
+  content: "";
+  background-image: url("../../img/bg2.jpg");
+  position: absolute;
+  height: 32em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 85em 40em;
+  z-index: -1;
+  opacity: 0.5;
+}
+#dosa {
+  width: 20em;
+}
+
+#fingers {
+  width: 18em;
+}
+
+#pizza {
+  width: 18em;
+}
+
+/*  section cheaf css  */
+
+#chefs {
+  height: 27em;
+  background-color: rgba(90, 89, 89, 0.15);
+  /* border: 2px solid black; */
+}
+
+#chefs::before {
+  content: "";
+  background-image: url("../../img/bg4.jpg");
+  position: absolute;
+  height: 30em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 85em 40em;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* footer  */
+
+footer::before {
+  content: "";
+  background-image: url("../../img/bg3.jpg");
+  position: absolute;
+  height:18em;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 85em 40em;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+
+footer {
+  padding: 40px 0;
+  background-color: #1c04b923;
+  color: #4b4c4d;
+  border-radius: 20px;
+}
+
+footer ul {
+  /* border: rgb(255, 255, 255) solid 1px ; */
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 2.5em;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer ul a {
+  color: rgb(0, 217, 255);
+  text-decoration: none;
+  opacity: 1;
+}
+
+footer ul a:hover {
+  opacity: 1;
+  color: #4b4c4d;
+}
+
+footer .social {
+  /* border: 1px solid wheat; */
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+footer .social > a img {
+  width: 40px;
+  height: 40px;
+  /* display: inline-block; */
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 8px;
+}
+
+footer .social > a img:hover {
+  opacity: 0.5;
+}
+
+footer .copyright {
+  /* border: 1px wheat solid; */
+  display: inline;
+  margin-top: 2px;
+  text-align: left;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+}
+
+/* side nav */
+.sidenav {
+  position: fixed;
+  /* border: 2px white solid ; */
+  width: 65px;
+  right: 5px;
+  top: 25%;
+  bottom: 25%;
+}
+
+.sidenav img {
+  display: block;
+  height: 30px;
+  margin: 25px auto;
+  pointer-events: painted;
+}
+
+.author {
+  width: 74em;
+  margin: 1em 1em;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: right;
+  text-transform: capitalize;
+  display: inline-block;
+}
