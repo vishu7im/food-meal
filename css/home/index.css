@@ -6,9 +6,10 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "Abril Fatface", cursi;
+  font-size: 16px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -16,11 +17,11 @@ html{
 
 .navbar {
   display: flex;
-  /* border: 1px solid black; */
   background-color: rgba(0, 0, 0, 0.296);
   justify-content: space-between;
   position: sticky;
   top: 0;
+  word-wrap: normal;
   box-shadow: 15px 1px 15px 7px rgba(0, 0, 0, 0.631);
 }
 
@@ -46,7 +47,6 @@ html{
 
 .navbar ul {
   display: flex;
-  /* border: 1px red solid; */
   justify-content: space-around;
   align-items: center;
   width: 30em;
@@ -57,13 +57,11 @@ html{
   margin: 0.5em;
   text-decoration: none;
   text-transform: capitalize;
-  /* font-size: 1.2em; */
   transition: all 0.5s;
 }
 .active {
   font-size: 1.5em;
   padding: 2px 13px;
-  font-size: 1.5em;
   border-radius: 10px;
   background-color: rgba(0, 255, 242, 0.631);
 }
@@ -78,14 +76,14 @@ html{
 /*  header css  */
 
 header {
-  height: 23em;
+  background-color: rgba(80, 78, 78, 0.151);
 }
 
 header::before {
   content: "";
   background-image: url("../../img/bg1.jpg");
   position: absolute;
-  height: 25em;
+  height: 28em;
   width: 100%;
   z-index: -1;
   opacity: 0.9;
@@ -147,42 +145,32 @@ header p span {
 
 /* utlity  */
 .flex {
-  /* border: 2px rgb(217, 255, 0) solid ; */
   display: flex;
   justify-content: space-around;
-  margin: 1px;
   margin: 2em 0em;
-  height: 20em;
   flex-wrap: wrap;
 }
 
 .p-heading {
-  /* border: 2px red solid ; */
-
   color: rgb(241, 233, 233);
   text-transform: capitalize;
-  /* margin: 0.3em; */
+  margin-top: 1.5em;
   font-weight: bolder;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
-  margin: 0.5em 0.5em;
   text-shadow: 7px 5px 10px rgb(75, 72, 72);
 }
 
 .s-heading {
-  /* border: 2px rgb(0, 0, 0) solid ; */
 
   color: rgb(0, 255, 255);
   text-transform: capitalize;
-  margin: 0.3em;
   font-weight: bolder;
   font-size: 2.5em;
   text-align: center;
   text-shadow: 7px 5px 10px rgb(75, 72, 72);
- 
 }
 .img {
-  /* border: 2px rgb(21, 255, 0) solid ; */
   height: 18em;
   margin: 0px auto;
 }
@@ -190,8 +178,7 @@ header p span {
 .center {
   border: 2px rgba(120, 239, 255, 0.658) solid;
   background-color: rgba(66, 63, 63, 0.356);
-  width: 18em;
-  height: 22.5em;
+  width: 22%;
   border-radius: 12px;
   transition: all 0.5s ease-in-out;
   text-align: center;
@@ -205,47 +192,45 @@ header p span {
 }
 /* section1 our product  */
 #product {
-  height: 30em;
   background-color: rgba(90, 89, 89, 0.15);
-  /* border: 2px solid black ; */
 }
 
 #product::before {
   content: "";
   background-image: url("../../img/bg2.jpg");
   position: absolute;
-  height: 32em;
+  height: 176%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 85em 40em;
   z-index: -1;
   opacity: 0.5;
 }
+#burrger{
+width: 100%;
+}
 #dosa {
-  width: 20em;
+  width: 95%;
 }
 
 #fingers {
-  width: 18em;
+  width: 90%;
 }
 
 #pizza {
-  width: 18em;
+  width: 90%;
 }
 
 /*  section cheaf css  */
 
 #chefs {
-  height: 27em;
   background-color: rgba(90, 89, 89, 0.15);
-  /* border: 2px solid black; */
 }
-
 #chefs::before {
   content: "";
   background-image: url("../../img/bg4.jpg");
   position: absolute;
-  height: 30em;
+  height: 81%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 85em 40em;
@@ -255,11 +240,18 @@ header p span {
 
 /* footer  */
 
+footer {
+  padding: 2px 0;
+  background-color: #1c04b923;
+  color: #4b4c4d;
+  border-radius: 20px;
+}
+
 footer::before {
   content: "";
   background-image: url("../../img/bg3.jpg");
   position: absolute;
-  height:18em;
+  height: 16.5em;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 85em 40em;
@@ -267,16 +259,7 @@ footer::before {
   opacity: 0.9;
 }
 
-
-footer {
-  padding: 40px 0;
-  background-color: #1c04b923;
-  color: #4b4c4d;
-  border-radius: 20px;
-}
-
 footer ul {
-  /* border: rgb(255, 255, 255) solid 1px ; */
   padding: 0;
   list-style: none;
   text-align: center;
@@ -291,7 +274,7 @@ footer li {
 }
 
 footer ul a {
-  color: rgb(0, 217, 255);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   opacity: 1;
 }
@@ -302,7 +285,6 @@ footer ul a:hover {
 }
 
 footer .social {
-  /* border: 1px solid wheat; */
   text-align: center;
   padding-bottom: 1px;
 }
@@ -310,7 +292,6 @@ footer .social {
 footer .social > a img {
   width: 40px;
   height: 40px;
-  /* display: inline-block; */
   text-align: center;
   border-radius: 50%;
   border: 1px solid #ccc;
@@ -322,9 +303,9 @@ footer .social > a img:hover {
 }
 
 footer .copyright {
-  /* border: 1px wheat solid; */
   display: inline;
   margin-top: 2px;
+  margin-left: 2em;
   text-align: left;
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -334,7 +315,6 @@ footer .copyright {
 /* side nav */
 .sidenav {
   position: fixed;
-  /* border: 2px white solid ; */
   width: 65px;
   right: 5px;
   top: 25%;
@@ -348,6 +328,7 @@ footer .copyright {
   pointer-events: painted;
 }
 
+
 .author {
   width: 74em;
   margin: 1em 1em;
@@ -357,4 +338,17 @@ footer .copyright {
   text-align: right;
   text-transform: capitalize;
   display: inline-block;
+}
+
+/* media quries for mobile  */
+
+/* for navbaar / */
+
+
+@media only screen and (max-width: 500px) {
+
+  .sidenav {
+    display: none;
+  }
+  
 }
