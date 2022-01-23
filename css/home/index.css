@@ -20,8 +20,6 @@ html {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  /* word-wrap: normal; */
-  /* width: 100vW; */
   box-shadow: 15px 1px 15px 7px rgba(0, 0, 0, 0.631);
 }
 
@@ -30,7 +28,6 @@ html {
 }
 
 .logo {
-  /* border: 2PX solid red ; */
   display: flex;
   align-items: center;
 }
@@ -81,7 +78,7 @@ html {
 header {
   background-color: rgba(80, 78, 78, 0.151);
   width: 100vw;
-  padding-bottom: 3rem ;
+  padding-bottom: 3rem;
 }
 
 header::before {
@@ -146,14 +143,13 @@ header p span {
   font-size: 1.2em;
 }
 
-/* main */
+/* css for main  */
 
 /* utlity  */
 .flex {
   display: flex;
   justify-content: space-around;
   /* margin: 2em 0em; */
-  
 }
 
 .p-heading {
@@ -192,31 +188,20 @@ header p span {
 }
 
 .center:hover {
-  width: 23%;
+  width: 30rem;
+  height: 35.5rem;
 
   background-color: rgba(0, 255, 255, 0.151);
 }
-/* section1 our product  */
+
+/* css for  section 1 our product  */
 #product {
- 
   background-image: url("../../img/bg2.jpg");
-  padding: 1rem 1rem ;
+  padding: 1rem 1rem;
   background-repeat: no-repeat;
   background-size: 135rem 58rem;
- 
 }
 
-/* #product::before {
-  content: "";
-  background-image: url("../../img/bg2.jpg");
-  position: absolute;
-  height: 43rem;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 135rem 47rem;
-  z-index: -1;
-  opacity: 1 ;
-} */
 #burrger {
   width: 100%;
 }
@@ -232,26 +217,15 @@ header p span {
   width: 90%;
 }
 
-/*  section cheaf css  */
+/* css for  section 2 cheaf */
 
 #chefs {
-  border: 2px solid rgba(255, 255, 255, 0) ;
+  border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(90, 89, 89, 0.15);
-  background-image: url("../../img/bg4.jpg"); 
+  background-image: url("../../img/bg4.jpg");
   background-repeat: no-repeat;
   background-size: 136rem 53rem;
 }
-/* #chefs::before {
-  content: "";
-  background-image: url("../../img/bg4.jpg");
-  position: absolute;
-  height: 43rem;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: 135rem 47rem;
-  z-index: -1;
-  opacity: 0.9;
-} */
 
 /* footer  */
 
@@ -329,7 +303,6 @@ footer .copyright {
 
 /* side nav */
 .sidenav {
-  /* border: rgb(0, 0, 0) solid 2px ; */
   position: fixed;
   width: 6.5rem;
   right: 0.5rem;
@@ -344,92 +317,90 @@ footer .copyright {
   pointer-events: painted;
 }
 
-/* .author {
-  width: 74em;
-  margin: 1em 1em;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  text-align: right;
-  text-transform: capitalize;
-  display: inline-block;
-} */
-
 /* media quries for tablates */
+
 @media only screen and (max-width: 900px) {
+  /* for font-size */
   html {
     font-size: 50%;
   }
 
+  /* css for main */
+
+  /* utility */
   .flex {
-    
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  #product{
-
+  /* section 1 */
+  #product {
     background-size: 125rem 97rem;
   }
-  #chefs{
+  /* section 2 */
+  #chefs {
     background-size: 111rem 97rem;
-    
   }
 }
 
-
 /*  responsive code  for mobile phone */
 @media only screen and (max-width: 600px) {
+  /* for font size  */
   html {
     font-size: 43%;
   }
 
+  /* navbar */
+
   .logo {
-    /* border: 2PX solid red ; */
     justify-content: center;
     align-items: center;
-  }
-
-  .sidenav {
-    display: none;
   }
 
   .navbar {
     flex-direction: column;
   }
 
+  /* main */
+
+  /* utility  */
+
   .flex {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
   }
-  .center{
+  .center {
     width: 55rem;
     height: 44rem;
   }
-  .img{
-    height : 34rem;
+  .center:hover {
+    width: 55.5rem;
+    height: 44.5rem;
   }
-
-#product{
-
-  background-size: 125rem 219rem;
-}
-#chefs{
-  background-size: 111rem 219rem;
-  
-}
-
+  .img {
+    height: 34rem;
+  }
+  /* section 1  */
+  #product {
+    background-size: 125rem 219rem;
+  }
+  /* section 2 */
+  #chefs {
+    background-size: 111rem 219rem;
+  }
+  /* sidenav */
+  .sidenav {
+    display: none;
+  }
 }
 
 /* media queris for small mobile  */
 
 @media only screen and (max-width: 480px) {
+  /* font size  */
   html {
     font-size: 35%;
   }
-
-
 }
