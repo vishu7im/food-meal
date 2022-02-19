@@ -31,15 +31,15 @@
         let ham = document.getElementById("ham");
         let menu = document.getElementById("menu");
 
-        if (menu.style.display != "none") {
+        if (menu.style.display != "flex") {
 
-            menu.style.display = "none";
-            ham.style.top = "40%";
-            console.log("hide ");
-        } else {
             menu.style.display = "flex";
             ham.style.top = "8%"
             console.log("menu show ");
+        } else {
+            menu.style.display = "none";
+            ham.style.top = "40%";
+            console.log("hide ");
         }
 
 
